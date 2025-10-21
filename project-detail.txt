@@ -1,0 +1,51 @@
+House Market Place React Project Udemy By Brad Traversy
+
+Firebase Setup Rules
+- Create Firebase Project
+- Create "web" app within firebase to get config values"
+- Install firebase in your project "npm i firebase
+- Create a config file in your project
+- Add authentication for email/password and Google
+- Create a user from Firebase
+- Enable Firestore
+- Add rules for firestore (https://gist.github.com/bradtraversy/6d7de7e877d169a6aa4e61140d25767f)
+
+- Setup firebase project to get the below authentication key. Create the script and use in the project (https://console.firebase.google.com/)
+
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "firebase/app";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+
+	// Your web app's Firebase configuration
+	const firebaseConfig = {
+	  apiKey: "AIzaSyBnkUbb9CltL1rudhkiFeMivmPE6YyYA50",
+	  authDomain: "house-marketplace-app-re-b4e2a.firebaseapp.com",
+	  projectId: "house-marketplace-app-re-b4e2a",
+	  storageBucket: "house-marketplace-app-re-b4e2a.firebasestorage.app",
+	  messagingSenderId: "1075016267237",
+	  appId: "1:1075016267237:web:f3f0f6e4c3c4e15e562b0c"
+	};
+
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+
+Note - firebase direct console db listings creation does not work from the office machine due to security issue
+
+- Setup github and install React app
+	npx create-react-app house-marketplace-app-react-new --use-npm
+	cd house-marketplace-app-react-new
+	
+	git remote add origin https://github.com/mdsuhail/house-marketplace-app-react-new.git
+	git branch -M main
+	git push -u origin main
+
+- Create config file firebase.config.js in project src folder and add the code provided from firebase.
+
+- Setup the Authentication provider in Firebase console for Email/Password and Google
+
+- Setup the API key in GCP(Google Console) for Geo Location api. (Note- Api did not work becuase of the billing issue)
+
+- For map, use leaflet https://leafletjs.com/examples/quick-start/
+
+- For slider use Swiper js React https://swiperjs.com/react. This is not working in this project
